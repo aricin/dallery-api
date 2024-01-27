@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "aws-sdk": "^2.1545.0",
+    "dotenv": "^16.4.1",
     "formidable": "^3.5.1",
+    "micro": "^10.0.1",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18"

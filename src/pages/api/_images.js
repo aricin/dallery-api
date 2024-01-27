@@ -34,7 +34,7 @@ const uploadHandler = async (req, res) => {
     const files = data.files;
     const file = files?.file[0];
     const fileContent = await fs.readFile(file.filepath);
-    const fileName = `uploads/${Date.now()}-${file.originalFilename}`;
+    const fileName = `${Date.now()}-${file.originalFilename}`;
 
     // Upload to S3
     const params = {

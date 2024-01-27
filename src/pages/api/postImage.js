@@ -34,6 +34,8 @@ const uploadHandler = async (req, res) => {
         const base64String = message.replace(/^data:image\/\w+;base64,/, "");
         const imageBuffer = Buffer.from(base64String, 'base64');
 
+        console.log(base64String);
+
         // Define file name and content type
         const fileName = `${Date.now()}-image`;
         const contentType = 'image/jpeg';  // Set the appropriate content type. You might want to extract it from the base64 string.
